@@ -19,6 +19,21 @@ Este repositorio contiene la resolución del Ejercicio 1 del Trabajo Práctico N
 
 ---
 
+## Estructura del Proyecto
+
+La estructura del proyecto sigue el layout estándar de Maven para pruebas, separando las clases de utilidad de las clases de prueba.
+
+```bash
+tp3-selenium-functional/
+├─ src/
+│  └─ test/java/
+│     ├─ utils/BaseTest.java      # Configuración base (setUp y tearDown)
+│     ├─ tests/LoginTests.java    # Pruebas de Login (CF-001, CF-002)
+│     └─ tests/CartTests.java     # Pruebas de Carrito (CF-003)
+├─ pom.xml                        # Dependencias (Selenium, JUnit)
+```
+---
+
 ## Objetivo
 
 El objetivo de este proyecto es validar las funcionalidades críticas del sitio [https://www.saucedemo.com/](https://www.saucedemo.com/) aplicando técnicas de testing funcional (caja negra).
